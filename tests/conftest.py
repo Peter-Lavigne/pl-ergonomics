@@ -2,7 +2,6 @@ import os
 
 import pytest
 from dotenv import load_dotenv
-from pl_key_value_sqlite_db.constants import PYTEST_INTEGRATION_TEST_MARKERS
 from pl_key_value_sqlite_db.testing.key_value_sqlite_fake import KeyValueSqliteFake
 from pl_key_value_sqlite_db.testing.settings_fake import (
     SettingsFake as KeyValueDbSettingsFake,
@@ -13,6 +12,8 @@ from pl_tiny_clients.testing.settings_fake import (
 )
 from pl_tiny_clients.testing.time_fake import TimeFake
 from pl_user_io import display
+
+from .constants import PYTEST_INTEGRATION_TEST_MARKERS
 
 
 def pytest_runtest_setup(item: pytest.Item) -> None:
