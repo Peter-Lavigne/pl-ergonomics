@@ -1,0 +1,64 @@
+[project]
+name = "pl-ergonomics"
+version = "0.0.1"
+description = "Notifications to stop staring at my screen all day."
+readme = "README.md"
+authors = [{ name = "Peter Lavigne" }]
+requires-python = ">=3.12"
+dependencies = [
+    "pl-run-program==0.0.30",
+    "pl-mocks-and-fakes==0.0.30",
+    "pl-user-io==0.0.17",
+    "pl-tiny-clients==0.0.37",
+    "pydantic>=2.12.5",
+    "pydantic-settings>=2.13.1",
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
+[project.urls]
+Homepage = "https://github.com/Peter-Lavigne/pl-ergonomics"
+Repository = "https://github.com/Peter-Lavigne/pl-ergonomics"
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["pyright==1.1.408", "pytest-cov==7.0.0", "ruff==0.15.2", "pytest==9.0.2"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "-m",
+    "not integration and not slow and not nondeterministic and not dependent and not expensive and not manual",
+    "-q",
+    "-rN",
+    "-s",
+    "--tb=short",
+]
+markers = [
+    "integration: (deprecated) marks tests as integration",
+
+    "slow: the test runs slowly",
+    "nondeterministic: the test is not guaranteed to pass on every run, even if the code is correct",
+    "dependent: the test may modify the outcome of other tests",
+    "expensive: the test costs money to run",
+    "manual: the test requires human effort to run",
+]
+
+[tool.ruff]
+extend = "copied/pyproject.toml"
+
+[tool.ruff.lint]
+extend-ignore = ["UP047"]
+
+[tool.pyright]
+typeCheckingMode = "strict"
+
+[tool.coverage.run]
+omit = ["tests/*", "src/pl_ergonomics/testing/*", "*_fake.py"]
+
+[tool.coverage.report]
+# Ignore all functions mocked in unit tests.
+exclude_also = ["@MockInUnitTests"]

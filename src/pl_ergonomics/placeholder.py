@@ -1,0 +1,2 @@
+def placeholder() -> None:
+    pass
