@@ -1,6 +1,6 @@
 [project]
 name = "pl-ergonomics"
-version = "0.0.2"
+version = "0.0.3"
 description = "Notifications to stop staring at my screen all day."
 readme = "README.md"
 authors = [{ name = "Peter Lavigne" }]
@@ -10,8 +10,10 @@ dependencies = [
     "pl-mocks-and-fakes==0.0.30",
     "pl-user-io==0.0.17",
     "pl-tiny-clients==0.0.37",
-    "pydantic>=2.12.5",
-    "pydantic-settings>=2.13.1",
+    "pydantic==2.12.5",
+    "pydantic-settings==2.13.1",
+    "pl-key-value-sqlite-db==0.0.3",
+    "typer==0.21.1",
 ]
 license = "Apache-2.0"
 license-files = ["LICENSE"]
@@ -20,6 +22,9 @@ classifiers = ["License :: OSI Approved :: Apache Software License"]
 [project.urls]
 Homepage = "https://github.com/Peter-Lavigne/pl-ergonomics"
 Repository = "https://github.com/Peter-Lavigne/pl-ergonomics"
+
+[project.scripts]
+ergonomics = "pl_ergonomics.ergonomics:main"
 
 [build-system]
 requires = ["uv_build>=0.10.4,<0.11.0"]
