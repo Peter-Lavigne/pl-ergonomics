@@ -241,7 +241,7 @@ wheels = [
 
 [[package]]
 name = "pl-ergonomics"
-version = "0.0.5"
+version = "0.0.6"
 source = { editable = "." }
 dependencies = [
     { name = "pl-key-value-sqlite-db" },
@@ -264,10 +264,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pl-key-value-sqlite-db", specifier = "==0.0.3" },
+    { name = "pl-key-value-sqlite-db", specifier = "==0.0.6" },
     { name = "pl-mocks-and-fakes", specifier = "==0.0.30" },
     { name = "pl-run-program", specifier = "==0.0.30" },
-    { name = "pl-tiny-clients", specifier = "==0.0.37" },
+    { name = "pl-tiny-clients", specifier = "==0.0.41" },
     { name = "pl-user-io", specifier = "==0.0.17" },
     { name = "pydantic", specifier = "==2.12.5" },
     { name = "pydantic-settings", specifier = "==2.13.1" },
@@ -284,7 +284,7 @@ dev = [
 
 [[package]]
 name = "pl-key-value-sqlite-db"
-version = "0.0.3"
+version = "0.0.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pl-mocks-and-fakes" },
@@ -294,9 +294,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "pydantic-settings" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f3/e5/9194837c96f7efe2a90057832d7dca6d369c936bfe67b2e7427a1269a213/pl_key_value_sqlite_db-0.0.3.tar.gz", hash = "sha256:11572cb41c84791c864744be3022b78638c6571a0453903e008e23dd34d70bb2", size = 8928, upload-time = "2026-03-01T01:34:28.419Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6e/06/26bb6af7193ba38294dc70c9643255a3c27042d3007a7e5cafab3855a73a/pl_key_value_sqlite_db-0.0.6.tar.gz", hash = "sha256:6496b0adae39f594fc7c568ecd16f99d2db7d95d8ba6966741593eda2b77e633", size = 8914, upload-time = "2026-03-06T00:10:59.576Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/82/39/856a8cade49e1d3edf483e7c01447ac5d8ed370bd98890a3bae96346f6a5/pl_key_value_sqlite_db-0.0.3-py3-none-any.whl", hash = "sha256:cd3a0d8b97643abe88ee474d1a3d86fb861becd17ccf6c33b9d6f6063a37ba60", size = 18521, upload-time = "2026-03-01T01:34:27.379Z" },
+    { url = "https://files.pythonhosted.org/packages/43/8e/c032ee64233888c4a8f87397a06e32bf413ade7541ffe49957cf0c287917/pl_key_value_sqlite_db-0.0.6-py3-none-any.whl", hash = "sha256:616aa85b91288ea83ad24685afcdac628a108b5314aaef20777fadf095419319", size = 18519, upload-time = "2026-03-06T00:10:58.49Z" },
 ]
 
 [[package]]
@@ -322,7 +322,7 @@ wheels = [
 
 [[package]]
 name = "pl-tiny-clients"
-version = "0.0.37"
+version = "0.0.41"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "pl-mocks-and-fakes" },
@@ -333,9 +333,9 @@ dependencies = [
     { name = "pytest" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/89/11/cb09936cf6dd74dfa60a1921fed64a0873b0e42f707b9269cb18d5e613f0/pl_tiny_clients-0.0.37.tar.gz", hash = "sha256:2e3200ab600c53e60abf616bc422a23f8b3a277510e3c6680be82e6dc16b345e", size = 25945, upload-time = "2026-02-26T15:37:41.214Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/da/fd/4aa9ece6b64b24c9c46c3874f25fa1429b29afdf396cdcda7f57f6032729/pl_tiny_clients-0.0.41.tar.gz", hash = "sha256:3105004dd8ab28efe82f9a4313db37e12420850cd3d899884d3f0d16e650c54e", size = 25858, upload-time = "2026-03-06T00:07:21.287Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ed/bc/9fc2138ec13fb84fa059cb3faccc647678d45ebe47760434e8f9f86f86e7/pl_tiny_clients-0.0.37-py3-none-any.whl", hash = "sha256:98d99ec5f039adda7dad4c561f62cb5750c7378b32ea678ad65c1be0e7782b2b", size = 54376, upload-time = "2026-02-26T15:37:41.966Z" },
+    { url = "https://files.pythonhosted.org/packages/f1/8d/b3406d300bdf625e21834c80f4dcc9903c8a3c67af648249bfe4c310a413/pl_tiny_clients-0.0.41-py3-none-any.whl", hash = "sha256:d3a0d71a21f27a963482acaf168532f3177983967c17528383820b592782ccd7", size = 54294, upload-time = "2026-03-06T00:07:19.585Z" },
 ]
 
 [[package]]
